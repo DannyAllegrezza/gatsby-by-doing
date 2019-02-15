@@ -1,8 +1,9 @@
 import React from 'react';
+import Header from '../components/header';
 
 export default () => (
     <div style={{ color: 'teal' }}>
-        <h1>About Page</h1>
+        <Header headerText="About" />
         <p>Re-di-di-de-doooo</p>
     </div>
 )
