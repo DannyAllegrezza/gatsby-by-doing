@@ -94,3 +94,9 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+### Other tips and anecdotes
+
+> If you’re interested in further reading, check out [Christopher “vjeux” Chedeau’s 2014 presentation](https://speakerdeck.com/vjeux/react-css-in-js) that sparked this movement as well as Mark Dalgleish’s more recent post “[A Unified Styling Language](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)”.
+
+# Layout components and Plugins in Gatsby
