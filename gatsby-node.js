@@ -17,7 +17,7 @@ exports.createPages = ({ actions: { createPage } }) => {
 
     createPage({
         path: '/cars',
-        component: require.resolve('./src/pages/cars.js'),
+        component: require.resolve('./src/templates/cars.js'),
         context: { allCars }
     })
 }

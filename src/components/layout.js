@@ -1,11 +1,11 @@
-import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
+import React from "react";
+import { StaticQuery, graphql, Link } from "gatsby";
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
     <Link to={props.to}>{props.children}</Link>
   </li>
-)
+);
 
 export default ({ children }) => (
   <StaticQuery
@@ -17,8 +17,7 @@ export default ({ children }) => (
           }
         }
       }
-      `
-    }
+    `}
     render={data => (
       <div style={{ margin: `3rem auto`, maxWidth: 650, padding: `0 1rem` }}>
         <header style={{ marginBottom: `1.5rem` }}>
@@ -30,6 +29,7 @@ export default ({ children }) => (
             <ListLink to="/about/">About</ListLink>
             <ListLink to="/contact/">Contact</ListLink>
             <ListLink to="/cars/">Cars</ListLink>
+            <ListLink to="/my-files">My Files</ListLink>
             <li>{data.site.siteMetadata.title}</li>
           </ul>
         </header>
@@ -37,4 +37,4 @@ export default ({ children }) => (
       </div>
     )}
   />
-)
+);
