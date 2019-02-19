@@ -4,26 +4,26 @@ import Header from '../components/header';
 import { graphql } from "gatsby";
 
 export default ({ data }) => {
-  console.log(data)
-  return (
-    <Layout>
-      <div>
-        <Header headerText={data.site.siteMetadata.title} />
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <h3>
-              {node.frontmatter.title}{" "}
-              <span>
-                — {node.frontmatter.date}
-              </span>
-            </h3>
-            <p>{node.excerpt}</p>
-          </div>
-        ))}
-      </div>
-    </Layout>
-  )
+    //console.log(data)
+    return (
+        <Layout>
+            <div>
+                <Header headerText={data.site.siteMetadata.title} />
+                <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+                {data.allMarkdownRemark.edges.map(({ node }) => (
+                    <div key={node.id}>
+                        <h3>
+                            {node.frontmatter.title}{" "}
+                            <span>
+                                — {node.frontmatter.date}
+                            </span>
+                        </h3>
+                        <p>{node.excerpt}</p>
+                    </div>
+                ))}
+            </div>
+        </Layout>
+    )
 }
 
 export const query = graphql`
