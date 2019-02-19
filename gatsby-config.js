@@ -2,6 +2,7 @@
 module.exports = {
     plugins: [
         `gatsby-plugin-typography`,
+        `gatsby-transformer-remark`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -11,6 +12,6 @@ module.exports = {
         }]
     ,
     siteMetadata: {
-        title: 'A title from SiteMetaData'
+        title: 'Stack Overflow:: A Blog'
     }
 }
